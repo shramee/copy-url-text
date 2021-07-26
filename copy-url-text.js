@@ -23,7 +23,8 @@
 					e.preventDefault();
 					fetch( $el.href )
 						.then( c => c.text() )
-						.then( text => copyText( text ) );
+						.then( text => copyText( text ) )
+						.then( () => $el.innerText = 'Copied!' );
 				} )
 			}
 		)
