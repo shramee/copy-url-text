@@ -21,7 +21,6 @@
 			$el => {
 				$el.addEventListener( 'click', e => {
 					e.preventDefault();
-					$el.innerText = 'Copying' )
 					fetch( $el.href )
 						.then( c => c.text() )
 						.then( text => copyText( text ) )
